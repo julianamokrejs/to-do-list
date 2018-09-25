@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to right,#e0c3fc,#8ec5fc);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    background-color: white;
+    width: 30%;
+    height: 100%;
+    margin-top: 10%;
+}
+
+.lista-tarefas__check-all {
+    border-bottom: 1px solid lightgrey;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    color: blue;
+}
+
+.lista-tarefas__delete-all-button {
+    border: 0;
+    color: white;
+    background-color: #ba7af8;
+    width: 30%; 
+    height: 20%;
+    padding: 2%;
+    margin-left: 39.4%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tarefa-composer__form-group {
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.tarefa-composer__input{
+    width: 100%;
+    display: block;
+    border: 1px solid lightgrey;
+    min-height: 130px;
+    padding-top: 5px;
+    font-size: 14px;
+    resize: none;
+    color: #2e2e2e;
+}
+
+.tarefa-composer__button {
+    border: 0;
+    padding: 5% auto;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100%;
+    height: 55px;
+    background-color: #ba7af8;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.lista-tarefas__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    border-width: 100%;
+    
+}
+
+.lista-tarefas {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.lista-tarefas__item-texto {
+    padding-left: 5px;
+}
+
+.lista-tarefas__delete-button{
+    color: gray;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0;
+    background: 0 0;
+    cursor: pointer;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        background-color: white;
+        width: 50%;
+        height: 100%;
+        margin-top: 10%;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .wrapper {
+        background-color: white;
+        width: 80%;
+        height: 100%;
+        margin-top: 10%;
+    }
+}
