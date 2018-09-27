@@ -14,7 +14,7 @@ body {
 
 .wrapper {
     background-color: white;
-    width: 35%;
+    width: 30%;
     height: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -22,20 +22,20 @@ body {
 }
 
 .lista-tarefas__checkall-button {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* justify-content: center; */
+    /* margin-left: 15%;
+    margin-right: 15%; */
     font-weight: bold;
     font-size: 12px;
     border-bottom: 1px solid lightgrey;
 }
 
 .lista-tarefas__check-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid lightgrey;
     margin-top: 25px;
     margin-bottom: 25px;
-    margin-right: 6px;
     font-size: 12px;
     border: none;
 }
@@ -44,23 +44,22 @@ body {
     border: 0;
     color: white;
     background-color: #ba7af8;
-    width: 30%; 
+    width: 50%; 
     height: 43px;
     padding: auto;
     font-size: 12px;
     font-weight: 600;
     transition: 0.3s;
     outline: solid 1px #e0c3fc;
-
 }
 
 .lista-tarefas__delete-all-button {
     border: 0;
     color: white;
     background-color: #ba7af8;
-    width: 30%; 
+    width: 50%; 
     height: 43px;
-    padding: auto;
+    padding: 2%;
     font-size: 12px;
     font-weight: 600;
     transition: 0.3s;
@@ -114,6 +113,10 @@ body {
     text-transform: uppercase;
     transition: 0.3s;
     outline: none;
+}
+
+input {
+    opacity: 0;
 }
 
 .lista-tarefas__item {
