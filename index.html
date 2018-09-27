@@ -16,16 +16,21 @@
         <div class="tarefa-composer">
             <form action="Escreva a tarefa aqui" class="tarefa-composer__form">
                 <div class="tarefa-composer__form-group">
-                    <label id=""tarefaComposerInput" for="tarefaComposerInput" class="tarefa-composer__label">Adicione uma nova tarefa</label>
+                    <label id=""tarefaComposerInput" for="tarefaComposerInput" class="tarefa-composer__label">Lista de tarefas</label>
                 </div>
-                <textarea class="tarefa-composer__input" id="tarefaComposerInput" name="tarefaComposerInput"></textarea>
+                <textarea class="tarefa-composer__input" id="tarefaComposerInput" name="tarefaComposerInput" placeholder="Escreva uma tarefa aqui"></textarea>
                 <button class="button tarefa-composer__button">Add</button>
             </form>
         </div>
         <div class="lista-tarefas">
-        <input class="lista-tarefas__check-all" type="checkbox" id="allCheckboxes" onclick="javascript:checkAll(this)"/>
-                <label for="cc">Selecionar todas</label>
-        <button class="lista-tarefas__delete-all-button">Apagar selecionadas</button>
+            <div class="lista-tarefas__checkall-button">
+                <div class="lista-tarefas__check-all">
+        <input type="checkbox" id="allCheckboxes" onclick="javascript:checkAll(this)"/>
+                <label for="cc">Selecionar todas</label></div>
+        <!-- <button class="lista-tarefas__delete-checked-button">Apagar selecionadas</button> -->
+
+        <button class="lista-tarefas__delete-all-button">Apagar todas</button>
+        </div>
             <!-- <div class="lista-tarefas__item">
                 <div class="lista-tarefas__item-checkbox">
                     <input type="checkbox">

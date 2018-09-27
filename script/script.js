@@ -2,6 +2,8 @@ const tarefaComposerButton = document.querySelector(".tarefa-composer__button");
 const tarefaComposerInput = document.getElementById("tarefaComposerInput");
 const listaTarefas = document.querySelector(".lista-tarefas");
 const listaTarefasItem = document.querySelector(".lista-tarefas__item");
+const divTarefas = document.createElement("div");
+
 
 tarefaComposerButton.addEventListener("click", function(event){
     event.preventDefault();
@@ -11,9 +13,6 @@ tarefaComposerButton.addEventListener("click", function(event){
         tarefaComposerInput.focus();
         return false;
     }
-
-    const div = document.createElement("div");
-    div.classname = "tarefaBox";
 
     const checkboxTarefaButton = document.createElement("div");
     checkboxTarefaButton.className = "item__checkbox";
@@ -27,14 +26,14 @@ tarefaComposerButton.addEventListener("click", function(event){
     </div>
 </div>`
 
-    div.appendChild(checkboxTarefaButton);
-    listaTarefas.appendChild(div);
+    divTarefas.appendChild(checkboxTarefaButton);
+    listaTarefas.appendChild(divTarefas);
 
     tarefaComposerInput.value = ""
 
 })
 
-const listaTarefaItem = document.querySelector("div")
+// const listaTarefaItem = document.querySelector("div")
 
 function deletar_esta_merda (event2){
     let item = event2.parentNode
@@ -52,27 +51,12 @@ function checkAll(o) {
     }
   }
 
-  const deleteAllButton = document.querySelector(".lista-tarefas__delete-all-button");
-  const allCheckboxes = document.getElementById("allCheckboxes");
-  const tarefasCheckbox = document.querySelector(".lista-tarefas__checkbox")
+  divTarefas.classname = "tarefaBox";
 
 
+const deleteAllButton = document.querySelector(".lista-tarefas__delete-all-button");
+deleteAllButton.addEventListener("click", function(event2){
+  // event2.preventDefault();
 
-  deleteAllButton.addEventListener("click", function(event3){
-      event3.preventDefault();
-
-      if(allCheckboxes.checked === true){
-        tarefasCheckbox.remove()
-      } 
-
-    // allCheckboxes[allCheckboxes.selectedIndex].remove()
-  })
-
-//   const deleteAllButton = document.querySelectorAll(".lista-tarefas__delete-button");
-
-//   tarefaDeleteButton.addEventListener("click", function(event2){
-//       event2.preventDefault();
-//       div.remove();
-//       console.log("Tarefa apagada");
-//   })
-
+  divTarefas.remove()
+})

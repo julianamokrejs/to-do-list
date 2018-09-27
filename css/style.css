@@ -14,18 +14,44 @@ body {
 
 .wrapper {
     background-color: white;
-    width: 30%;
+    width: 35%;
     height: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 3%;
+}
+
+.lista-tarefas__checkall-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* justify-content: center; */
+    font-weight: bold;
+    font-size: 12px;
+    border-bottom: 1px solid lightgrey;
 }
 
 .lista-tarefas__check-all {
     border-bottom: 1px solid lightgrey;
     margin-top: 25px;
     margin-bottom: 25px;
-    font-size: 14px;
-    font-weight: bold;
-    color: blue;
+    margin-right: 6px;
+    font-size: 12px;
+    border: none;
+}
+
+.lista-tarefas__delete-checked-button {
+    border: 0;
+    color: white;
+    background-color: #ba7af8;
+    width: 30%; 
+    height: 43px;
+    padding: auto;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+    outline: solid 1px #e0c3fc;
+
 }
 
 .lista-tarefas__delete-all-button {
@@ -33,11 +59,24 @@ body {
     color: white;
     background-color: #ba7af8;
     width: 30%; 
-    height: 20%;
-    padding: 2%;
-    margin-left: 39.4%;
-    font-size: 14px;
-    font-weight: bold;
+    height: 43px;
+    padding: auto;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+    outline: solid 1px #e0c3fc;
+
+}
+
+.lista-tarefas__delete-button{
+    color: gray;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0;
+    background: 0 0;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
 }
 
 .tarefa-composer__form-group {
@@ -59,6 +98,7 @@ body {
     font-size: 14px;
     resize: none;
     color: #2e2e2e;
+    outline: solid 1px #e0c3fc;
 }
 
 .tarefa-composer__button {
@@ -73,6 +113,7 @@ body {
     color: white;
     text-transform: uppercase;
     transition: 0.3s;
+    outline: none;
 }
 
 .lista-tarefas__item {
@@ -81,29 +122,21 @@ body {
     padding: 10px;
     border-bottom: 1px solid lightgray;
     border-width: 100%;
-    
-}
-
-.lista-tarefas {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-left: 8px;
     margin-right: 8px;
-    font-weight: 600;
+    font-weight: 100;
+    font-size: 14px;
 }
 
-.lista-tarefas__item-texto {
-    padding-left: 5px;
-}
-
-.lista-tarefas__delete-button{
+.tarefa-cinza {
+    text-decoration: line-through;
     color: gray;
-    font-size: 16px;
-    font-weight: 700;
-    border: 0;
-    background: 0 0;
-    cursor: pointer;
-    padding: 0;
+}
+
+.tarefa {
+    color: black;
 }
 
 @media (max-width: 768px) {
